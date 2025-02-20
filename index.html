@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EpicFood Spices</title>
+    <style>
+        body { 
+            font-family: 'Georgia', serif;
+            margin: 0; 
+            padding: 0; 
+            background: url('spices-background.jpg') no-repeat center center fixed; 
+            background-size: cover; 
+            color: #333;
+        }
+        .blur-background {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            max-width: 1200px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+        header { background-color: #8B0000; color: white; padding: 20px; text-align: center; font-size: 24px; }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #600000;
+            padding: 15px;
+        }
+        .nav-links {
+            display: flex;
+            list-style: none;
+            padding: 0;
+        }
+        .nav-links a {
+            color: white;
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .nav-links a:hover {
+            background: #A52A2A;
+            border-radius: 5px;
+        }
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+            }
+            .nav-links a {
+                padding: 15px;
+                display: block;
+            }
+            .menu-toggle {
+                display: block;
+                position: absolute;
+                top: 20px;
+                right: 20px;
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            .product {
+            display: inline-block;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+            width: 300px;
+        }
+        .product img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .price {
+            font-size: 20px;
+            color: #e67e22;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .button {
+            background-color: #e67e22;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .button:hover {
+            background-color: #d35400;
+        }
+        }
+        .section { padding: 30px; margin-bottom: 30px; background: #FFE4B5; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+        .image { text-align: center; margin-top: 10px; }
+        iframe { display: block; margin: 20px auto; }
+        footer { background: #8B0000; color: white; text-align: center; padding: 15px; margin-top: 30px; font-size: 18px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>EpicFood Spices - The Heart of Flavor</h1>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    </header>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#order">Order</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="blur-background">
+        <section id="home" class="section">
+            <h2>Welcome to EpicFood Spices</h2>
+            <div class="image">
+                <img src="download.jpeg" alt="Spices Collection" width="25%">
+            </div>
+            <p>EpicFood Spices have been an essential part of human history, culture, and cuisine for centuries, playing a vital role in enhancing flavors, preserving food, and even serving medicinal purposes. From the ancient trade routes of the Silk Road to the bustling spice markets of India, the Middle East, and Africa, spices have shaped economies, fueled exploration, and added depth to culinary traditions worldwide. The diversity of spices available today showcases a rich history of agricultural development and cultural exchange, with each spice offering its own unique taste, aroma, and health benefits. Among the most popular spices, black pepper, known as the "King of Spices," has been a staple seasoning for thousands of years, originally native to South India and widely traded across the world. Similarly, turmeric, a golden-hued spice, has long been celebrated for its earthy flavor and potent medicinal properties, particularly in Ayurveda and traditional Chinese medicine. Cinnamon, derived from the inner bark of trees, is another ancient spice used in both sweet and savory dishes, offering a warm, aromatic essence that has captivated palates for generations. Cardamom, often called the "Queen of Spices," adds a complex, slightly citrusy, and floral note to dishes and beverages, especially in Middle Eastern and Indian cuisines. Cloves, with their intense, pungent flavor, are commonly used in spice blends and holiday dishes, as well as in natural remedies for toothaches and digestion. Nutmeg and mace, derived from the same plant, offer warm, nutty, and slightly sweet flavors that enhance both desserts and savory dishes. Ginger, a rhizome with a spicy and slightly sweet taste, is widely used in Asian cuisines, teas, and traditional medicine for its anti-inflammatory properties. Cumin, a key ingredient in many spice blends like curry powder and garam masala, contributes a warm, earthy, and slightly bitter flavor to countless dishes. Coriander, both in seed and leaf form (known as cilantro), provides a citrusy and slightly peppery taste that complements a variety of cuisines. Mustard seeds, available in yellow, brown, and black varieties, add pungency and depth to pickles, curries, and condiments like mustard sauce. Fennel seeds, with their sweet and licorice-like flavor, are popular in Italian, Indian, and Middle Eastern cuisines, as well as in digestive teas. Fenugreek, often used in spice blends like methi in Indian cooking, imparts a slightly bitter and maple-like taste to dishes. Star anise, a star-shaped spice, brings a licorice-like sweetness to broths, baked goods, and spice blends like Chinese five-spice powder. Saffron, one of the most expensive spices in the world, is prized for its delicate floral aroma, golden color, and unique taste, commonly used in Persian, Indian, and Mediterranean cuisines. Bay leaves, often added to soups, stews, and sauces, contribute a subtle herbal and slightly floral flavor. Paprika, made from ground dried peppers, varies in heat and sweetness, with versions like smoked paprika adding a rich, smoky depth to dishes. Chili powder, cayenne pepper, and other ground chilies provide heat and spice to countless recipes, from Mexican salsas to Indian curries. Sumac, a tangy and slightly citrusy spice, is a staple in Middle Eastern cuisine, often used to season meats, salads, and rice dishes. Allspice, despite its name, is a single spice that combines flavors reminiscent of cinnamon, cloves, and nutmeg, frequently used in Caribbean, Middle Eastern, and European dishes. Asafoetida, or hing, is a pungent spice used primarily in Indian vegetarian cooking to enhance the umami profile of dishes. Vanilla, derived from orchid pods, is one of the world's most beloved spices, adding a sweet, creamy, and aromatic essence to desserts, beverages, and perfumes. Spices not only elevate the sensory experience of food but also provide a wealth of health benefits. Many spices possess powerful antioxidant, anti-inflammatory, and antimicrobial properties that contribute to overall well-being. For example, turmeric contains curcumin, a compound known for its strong anti-inflammatory effects, while ginger has been widely studied for its ability to aid digestion and reduce nausea. Cinnamon has been linked to improved blood sugar control, and garlic, though technically a vegetable, is often used as a spice and is known for its immune-boosting properties. Cloves and nutmeg have been used in traditional medicine to alleviate pain and improve digestion. The antimicrobial properties of spices like black pepper, cumin, and oregano have been recognized for their ability to inhibit bacterial growth, making them valuable not only in culinary applications but also in food preservation. The use of spice blends is an integral part of global cuisines, with each culture developing unique combinations that define their culinary identity. Garam masala, a fragrant blend of spices including cardamom, cinnamon, cloves, cumin, and nutmeg, is a cornerstone of Indian cooking, adding warmth and complexity to dishes. Ras el hanout, a North African spice blend, typically includes a mix of over a dozen spices, such as coriander, cumin, cinnamon, and nutmeg, to create a rich, aromatic seasoning. Za'atar, a Middle Eastern blend, combines dried thyme, sumac, sesame seeds, and salt to create a tangy and herbal flavor perfect for seasoning breads, meats, and vegetables. Chinese five-spice powder balances the five fundamental flavors—sweet, sour, bitter, salty, and umami—with a blend of star anise, cloves, cinnamon, Sichuan pepper, and fennel seeds. Herbs de Provence, a French blend of dried herbs like thyme, rosemary, marjoram, and lavender, adds a fragrant and savory touch to Mediterranean dishes. The use of spices in beverages has also gained popularity, with spiced teas, coffees, and cocktails becoming staple drinks worldwide. Masala chai, a spiced Indian tea, combines black tea with cinnamon, cardamom, ginger, cloves, and black pepper for a warming and invigorating drink. Golden milk, a traditional Ayurvedic beverage, features turmeric, ginger, cinnamon, and black pepper mixed with milk for an anti-inflammatory and immune-boosting elixir. Mulled wine and spiced cider are popular seasonal beverages infused with warming spices like cloves, cinnamon, and nutmeg, adding depth and complexity to the drinks. The culinary versatility of spices extends beyond traditional uses, with modern chefs and home cooks experimenting with innovative applications, such as incorporating spices into desserts, chocolates, and even savory cocktails. As global cuisines continue to evolve, the role of spices remains as crucial as ever, bridging cultures, enhancing health, and elevating the art of cooking. The endless variety of spices and their unique characteristics ensure that they will always be a cherished component of culinary traditions around the world, adding vibrancy, flavor, and nourishment to every dish..</p>
+        </section>
+        <section id="about" class="section">
+            <h2>About Us</h2>
+            <div class="image">
+                <img src="download (3).jpeg" alt="About EpicFood Spices" width="25%">
+            </div>
+            <p>About Us - EpicFood Spices
+
+                Welcome to EpicFood Spices, where we bring the finest and most authentic spices to kitchens around the world. Our journey began with a simple yet passionate mission: to provide premium-quality spices that elevate every dish with rich flavors and aromatic essence. At EpicFood Spices, we believe that cooking is an art, and every ingredient plays a crucial role in creating a masterpiece. That’s why we are dedicated to sourcing the best spices from trusted farms and suppliers who share our commitment to excellence.
+                
+                Our story is deeply rooted in tradition and innovation. We respect the heritage of spice cultivation, honoring age-old practices while integrating modern techniques to ensure freshness, purity, and sustainability. Every spice in our collection undergoes rigorous quality checks to meet the highest standards, ensuring that our customers receive only the best. From the warm, earthy tones of turmeric to the bold, fiery kick of chili powder, our diverse range of spices caters to all culinary needs, from home cooks to professional chefs.
+                
+                At EpicFood Spices, we are more than just a spice company; we are a community of flavor enthusiasts dedicated to celebrating the magic of spices. Our team of experts is constantly researching and curating blends that capture the essence of global cuisines, making it easier for everyone to experiment and enjoy the richness of different flavors. Whether you are preparing a traditional recipe passed down through generations or exploring new culinary adventures, our spices will inspire creativity and enhance every meal.
+                
+                Sustainability and ethical sourcing are at the core of our values. We work closely with farmers and producers to promote fair trade practices, support local communities, and minimize our environmental impact. By choosing EpicFood Spices, you are not just adding flavor to your dishes but also contributing to a more sustainable and responsible food industry.
+                
+                Thank you for being a part of our journey. We invite you to explore our range of high-quality spices and experience the difference they bring to your cooking. Let’s create delicious memories together, one spice at a time. Welcome to the EpicFood Spices family!
+                
+                </p>
+        </section>
+        <section id="products" class="section">
+            <h2>Our Products</h2>
+            <div class="image">
+                <img src="download (2).jpeg" alt="EpicFood Spices Products" width="25%">
+            </div>
+            <p>At EpicFood Spices, we offer a diverse range of premium-quality spices that bring out the best flavors in every dish. Our carefully curated selection includes both whole and ground spices, spice blends, and specialty seasonings to cater to every culinary need.
+
+                Our collection features essentials like turmeric, black pepper, cumin, coriander, and cinnamon, known for their rich flavors and health benefits. For those who love bold and fiery tastes, we provide red chili powder, paprika, cayenne pepper, and mustard seeds, perfect for adding heat to your recipes. We also offer exotic spices like saffron, star anise, and cardamom, bringing unique aromas to gourmet dishes.
+                
+                Our expertly crafted spice blends, including garam masala, curry powder, za’atar, and Italian seasoning, make cooking easier and more flavorful. Whether you're preparing traditional dishes or experimenting with new flavors, our spice blends help create authentic tastes effortlessly.
+                
+                At EpicFood Spices, we ensure our products are 100% pure, free from additives, and ethically sourced, providing the highest quality for your kitchen. Discover our range and transform your cooking with the finest spices!
+                
+                </p>
+        </section>
+        <section id="order" class="section">
+            <h2>Order Now</h2>
+            <p>Enhance your cooking with the finest spices from EpicFood Spices! Browse our premium selection of fresh, high-quality spices and blends, sourced ethically to bring the best flavors to your kitchen. With just a click, you can bring authentic and aromatic spices straight to your doorstep. Whether you're a home cook or a professional chef, our spices are perfect for creating delicious meals. Don't wait—order now and transform your cooking experience!
+                <div class="product">
+                    <img src="download (1).jpeg" alt="Spices" width="25%">
+                    
+                    <p class="price">$12.99</p>
+                    <button class="button">Add to Cart</button>
+                </div>
+            </p>
+        </section>
+        
+    <div class="blur-background">
+        <section id="contact" class="section">
+            <h3>Contact Us</h3>
+            <p>Have a question or want to learn more about our products? Reach out to us via the details below:</p>
+            <p><strong>Email:</strong> support@epicfoodspices.com</p>
+            <p><strong>Phone:</strong> +1 234 567 890</p>
+            <p><strong>Address:</strong> 123 Spice Lane, Flavor Town, USA</p>
+            <p><strong>Business Hours:</strong> Monday - Friday: 9 AM - 6 PM</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+        </section>
+    <footer>
+        <p>&copy; 2025 EpicFood Spices. All rights reserved.</p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
